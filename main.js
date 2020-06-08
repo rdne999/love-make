@@ -3,3 +3,5 @@ function pleasureUser() {
 }
 
 const loveBtn = document.querySelector('love-btn');
+
+loveBtn.addEventListener('click', pleasureUser);

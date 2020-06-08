@@ -5,6 +5,14 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgb(253, 199, 208),
+    rgb(247, 126, 146)
+  );
+}
+
 .intro {
   width: 70%;
   margin: 0 auto;
@@ -20,5 +28,14 @@
 .love-btn {
   padding: 0.5em 0.75em;
   font-size: 2rem;
-  margin: 5em;
+  margin: 2em;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .intro-text {
+    font-size: 3rem;
+  }
 }
