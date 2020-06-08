@@ -1,5 +1,5 @@
 function pleasureUser() {
-  navigator.vibrate(1000);
+  window.navigator.vibrate(200); // vibrate for 200ms
 }
 
 const loveBtn = document.querySelector('love-btn');
