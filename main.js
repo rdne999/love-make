@@ -17,14 +17,14 @@ loveBtn.addEventListener('touchstart', () => {
   loveBtn.classList.add('love-btn', 'love-btn--pressed');
   let value = numberInput.value;
   if (value) {
-    if (!(value < 5 || value > 60)) {
+    if (!(value < 5 || value > 10)) {
       introText.innerText = 'the pleasure you deserve.';
       let milliseconds = value * 1000;
       navigator.vibrate(milliseconds);
       numberInput.value = '';
       console.log(value);
     } else {
-      introText.innerText = 'En az: 5, en fazla: 60';
+      introText.innerText = 'En az: 1, en fazla: 10';
       numberInput.value = '';
     }
   } else {
